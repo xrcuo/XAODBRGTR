@@ -9,19 +9,9 @@ import (
 
 //mc
 func MCSAF(url string) (C MC, err error) {
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return C, err
-	}
-	res, err := http.DefaultClient.Do(req)
-	if err != nil {
-		return C, err
-	}
-	defer res.Body.Close()
-	body, err := ioutil.ReadAll(res.Body)
-	if err != nil {
-		return C, err
-	}
+	req, _ := http.NewRequest("GET", url, nil)
+	res, _ := http.DefaultClient.Do(req)
+	body, _ := ioutil.ReadAll(res.Body)
 	var M MotdBEInfo
 	fmt.Print(M)
 	json.Unmarshal([]byte(body), &M)
