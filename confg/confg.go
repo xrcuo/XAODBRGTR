@@ -12,22 +12,17 @@ var Ziod Config
 
 type Config struct {
 	// 配置文件结构体
-	Scex          string   `yaml:"opzqr"`
-	SuperU        []int64  `yaml:"SuperUsers"`
-	NickNames     []string `yaml:"NickNames"`
-	CommandPrefix string   `yaml:"CommandPrefix"`
-	Server        struct {
+
+	Server struct {
 		Address string `yaml:"Address"`
 		Port    int64  `yaml:"Port"`
 		Token   string `yaml:"Token"`
 	} `yaml:"Server"`
-	Mcsman struct {
-		Addr   string `yaml:"addr"`
-		Port   int64  `yaml:"port"`
-		Apikey string `yaml:"apikey"`
-		Uld    string `yaml:"UID"`
-		Gld    string `yaml:"GID"`
-	} `yaml:"Mcsman"`
+	Wsn struct {
+		NickNames     []string `yaml:"NickNames"`
+		CommandPrefix string   `yaml:"CommandPrefix"`
+		SuperU        []int64  `yaml:"SuperUsers"`
+	} `yaml:"Wsn"`
 }
 
 func init() {
