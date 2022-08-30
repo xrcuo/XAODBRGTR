@@ -2,7 +2,7 @@
 # WS正像
 Server:
   Address: "127.0.0.1"
-  Port: 5418
+  Port: 6700
   Token: ""
 
 Wsn:
