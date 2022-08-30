@@ -1,13 +1,18 @@
 # go-cqhttp设置
+# WS正像
 Server:
-  Address: "49.4.115.221"
+  Address: "127.0.0.1"
   Port: 5418
-  Token: "opXSdlmwc66"
+  Token: ""
 
 Wsn:
   NickNames: [wa]
   CommandPrefix: /
   SuperUsers: [836447856]
+
+Api: "https://api.aqco.top"
+
+Send: "少女祈祷中......\n查什么查，别查了..."
 
 
 
