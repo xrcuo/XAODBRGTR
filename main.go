@@ -11,8 +11,8 @@ import (
 	con "github.com/xrcuo/XAODBRGTR/confg"
 
 	//-----------------------------------------------//
-	//_ "github.com/xrcuo/XAODBRGTR/plugin/MCSMan"
 	_ "github.com/xrcuo/XAODBRGTR/plugin/mc"
+	_ "github.com/xrcuo/XAODBRGTR/plugin/ping"
 )
 
 func init() {
@@ -24,7 +24,7 @@ func init() {
 }
 
 func main() {
-
+	fmt.Print("\n\n", con.Ziod.Sxh, "\n\n")
 	zero.OnCommand("hello").
 		Handle(func(ctx *zero.Ctx) {
 			ctx.Send("world")

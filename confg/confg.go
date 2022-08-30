@@ -12,7 +12,8 @@ var Ziod Config
 
 type Config struct {
 	// 配置文件结构体
-
+	Sxh    string `yaml:"Send"`
+	Stop   string `yaml:"Api"`
 	Server struct {
 		Address string `yaml:"Address"`
 		Port    int64  `yaml:"Port"`
